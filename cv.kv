@@ -1,0 +1,101 @@
+Main:
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing:10
+        padding: 40
+        
+        MDLabel:
+            text: "MY [size=40]QUICK[/size] [color=#A6A4A4FF]CV[/color]"
+            font_size: 100
+            markup:True
+            color:[1,1,1,1]
+            bold:True
+            italic:True 
+            font_size: 40
+        MDBoxLayout:
+                
+            
+                
+        MDLabel:
+            text: "work exprience"
+            color: [1,1,1,1]   
+        MDBoxLayout:
+                
+            TextInput:
+                id:exp
+                hint_text: "exprience"
+               
+            TextInput:
+                id:exptwp
+                hint_text: "exprience"
+            
+            TextInput:
+                id:expthree
+                hint_text: "exprience"
+            TextInput:
+                hint_text: "exprience"    
+        MDLabel:
+            text: "professional summary"
+            color:           
+        TextInput:
+            hint_text: "my professional summary"
+        
+        MDLabel:
+            id:ac
+            text: "achivements"
+            color: [1,1,1,1]     
+        MDBoxLayout:
+                
+            TextInput:
+                id:ach
+                hint_text: "achivement"
+               
+            TextInput:
+                id:achtwo
+                hint_text: "achivement"
+            
+            TextInput:
+                id:achthree
+                hint_text: "achivement"
+            TextInput:
+                id:achfour
+                hint_text: "achivement"    
+        MDLabel:
+            
+            text: "references"
+            color: [1,1,1,1]     
+        MDBoxLayout:
+                
+            TextInput:
+                id:ref
+                hint_text: "ref"
+               
+            TextInput:
+                id:reftwo
+                hint_text: "ref"
+        MDLabel:
+            text: "my projects"
+            color: [1,1,1,1]     
+        MDBoxLayout:
+                
+            TextInput:
+                id:pro
+                hint_text: "portfolio website link"
+               
+                    
+                    
+        MDButton:
+            pos_hint: {'x':0.378 , 'y':0.5 }
+            on_press: root.generate()
+            MDButtonText:
+                
+                text: "generate cv"
+                color:[1,1,1,1]
+        Label:
+            margin:100
+            id:cv
+            text: "."
+            color: [0.5,0.5,0.5,0.9]   
+            style:"italic" 
+            
