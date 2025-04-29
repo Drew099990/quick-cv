@@ -102,7 +102,7 @@ class Main(Screen):
         doc.add_heading(level=0, text="")
 
         skills = doc.add_heading("Skills:", 3)
-        # Add skills here
+        
         if languages is not "":
             doc.add_paragraph(style="List Bullet", text=languages)
         if frameworks_and_libraries is not "":
